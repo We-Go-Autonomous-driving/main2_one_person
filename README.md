@@ -87,4 +87,4 @@ yolov4-deepsort를 사용하기 위해서는 [yolov4.weights](https://drive.goog
 작성된 code는 2가지 버전이 있으니 유의할 것.  
 
 현재 저장소에 작성된 코드는 main code2이며, 초기에 탐지된 1인을 추적하며, target lost가 되면 조명이 blink되어 상태를 알려줄 수 있고 재인식이 가능하다.  
-main code2는 넥타이를 착용한 1인을 추적하는 코드이다.   
+main code1는 넥타이를 착용한 1인을 추적하는 코드이다.   
