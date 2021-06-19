@@ -66,30 +66,30 @@ yolov4-deepsort에 대해 더 자세히 알고 싶다면 [여기](https://github
 scout-mini에 대해 더 자세히 알고 싶다면 [여기](ttps://github.com/agilexrobotics/scout_mini_ros) 침고할 것  
 
 **최종 경로(요약)**  
-catkin_ws(폴더 이름은 변경 가능  
+catkin_ws(폴더 이름은 변경 가능)  
 ├build  
 ├devel/setup.bash  
 └src  
- └scout_mini_ros  
-  └scout_bringup  
-   ├core  
-   ├data/yolov4.weights(or yolov4-tiny.weights)  
-   ├deep_sort  
-   ├launch  
-   ├model_data  
-   ├outputs  
-   ├scripts  
-   ├tools  
-   ├Default_dist.py --> 깊이 초깃값 측정 (이를 토대로 장애물 영역의 깊이를 측정해 장애물 유무를 판단할 수 있다.)    
-   ├camera.py --> depth camera를 이용할 수 있게 하는 class code  
-   ├convert_tflite.py  
-   ├convert_trt.py  
-   ├drive.py --> 입력 이미지에 대한 주행 알고리즘(depth값과 RGB값이 입력되어 전진/정지/우회전/좌회전/속도감속 등을 정한다)    
-   ├key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드    
-   ├object_track_one_person.py --> 입력 이미지에 대한 추적 실시  
-   ├save_model.py  
-   ├scout_motor_light_pub --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
-   ├utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정    
+&nasp;└scout_mini_ros  
+&nasp;&nasp;└scout_bringup  
+&nasp;&nasp;&nasp;├core  
+&nasp;&nasp;&nasp;├data/yolov4.weights(or yolov4-tiny.weights)  
+&nasp;&nasp;&nasp;├deep_sort  
+&nasp;&nasp;&nasp;├launch  
+&nasp;&nasp;&nasp;├model_data  
+&nasp;&nasp;&nasp;├outputs  
+&nasp;&nasp;&nasp;├scripts  
+&nasp;&nasp;&nasp;├tools  
+&nasp;&nasp;&nasp;├Default_dist.py --> 깊이 초깃값 측정 (이를 토대로 장애물 영역의 깊이를 측정해 장애물 유무를 판단할 수 있다.)    
+&nasp;&nasp;&nasp;├camera.py --> depth camera를 이용할 수 있게 하는 class code  
+&nasp;&nasp;&nasp;├convert_tflite.py  
+&nasp;&nasp;&nasp;├convert_trt.py  
+&nasp;&nasp;&nasp;├drive.py --> 입력 이미지에 대한 주행 알고리즘(depth값과 RGB값이 입력되어 전진/정지/우회전/좌회전/속도감속 등을 정한다)    
+&nasp;&nasp;&nasp;├key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드    
+&nasp;&nasp;&nasp;├object_track_one_person.py --> 입력 이미지에 대한 추적 실시  
+&nasp;&nasp;&nasp;├save_model.py  
+&nasp;&nasp;&nasp;├scout_motor_light_pub --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
+&nasp;&nasp;&nasp;├utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정    
    
 ## 3. 사용 방법
 - `scout_bringup/object_track_one_person.py` 를 rosrun 하면 된다.
