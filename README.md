@@ -89,7 +89,7 @@ catkin_ws(폴더 이름은 변경 가능)
 　　　├object_track_one_person.py --> 입력 이미지에 대한 추적 실시  
 　　　├save_model.py  
 　　　├scout_motor_light_pub.py --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
-　　　├utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정    
+　　　└utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정    
    
 ## 4. 사용 방법
 - `scout_bringup/object_track_one_person.py` 를 rosrun 하면 된다.
