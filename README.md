@@ -71,7 +71,7 @@ catkin_ws(폴더 이름은 변경 가능)
 ├devel/setup.bash  
 └src  
 　└scout_mini_ros  
-　　└scout_bringup  　　　
+　　└scout_bringup  
 　　　├core  
 　　　├data/yolov4.weights(or yolov4-tiny.weights)  
 　　　├deep_sort  
