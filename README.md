@@ -65,7 +65,7 @@ yolov4-deepsort를 사용하기 위해서는 [yolov4.weights](https://drive.goog
 yolov4-deepsort에 대해 더 자세히 알고 싶다면 [여기](https://github.com/theAIGuysCode/yolov4-deepsort) 참고할 것  
 scout-mini에 대해 더 자세히 알고 싶다면 [여기](ttps://github.com/agilexrobotics/scout_mini_ros) 침고할 것  
 
-**최종 경로(요약)**  
+## 3. 최종 경로(요약)  
 catkin_ws(폴더 이름은 변경 가능)  
 ├build  
 ├devel/setup.bash  
@@ -88,10 +88,10 @@ catkin_ws(폴더 이름은 변경 가능)
 　　　├key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드    
 　　　├object_track_one_person.py --> 입력 이미지에 대한 추적 실시  
 　　　├save_model.py  
-　　　├scout_motor_light_pub --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
+　　　├scout_motor_light_pub.py --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
 　　　├utils2.py --> 깊이값을 이용해 사람과의 거리 및 장애물 영역 측정    
    
-## 3. 사용 방법
+## 4. 사용 방법
 - `scout_bringup/object_track_one_person.py` 를 rosrun 하면 된다.
 1. $ cd catkin_ws/src && source devel/setup/bash  
 2. $ roslaunch scout_bringup scout_minimal.launch  
@@ -101,7 +101,7 @@ catkin_ws(폴더 이름은 변경 가능)
 
 --> 시작 시 최초1인을 추적하는 코드
 
-## 4. 모듈 파일 설명(scout_bringup 폴더 내에 있음)
+## 5. 모듈 파일 설명(scout_bringup 폴더 내에 있음)
 1. key_move.py --> 추적 & 주행 알고리즘을 거쳐 나온 결과값(string)에 따라 속도와 방향을 변경해주는 메소드  
 2. scout_motor_light_pub.py --> key_move.py에서 나온 결과를 ROS topic으로 발행하는 코드(모터 및 조명 제어)  
 3. camera.py --> depth camera를 이용할 수 있게 하는 class code  
@@ -111,7 +111,7 @@ catkin_ws(폴더 이름은 변경 가능)
 7. object_track_one_person.py --> 입력 이미지에 대한 추적 실시  
 
 
-**참고** 
+**참고**   
 작성된 code는 2가지 버전이 있으니 유의할 것.  
 
 현재 저장소에 작성된 코드는 main code2이며, 초기에 탐지된 1인을 추적하며, target lost가 되면 조명이 blink되어 상태를 알려줄 수 있고 재인식이 가능하다.  
