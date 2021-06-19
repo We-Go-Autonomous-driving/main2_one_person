@@ -70,9 +70,9 @@ catkin_ws(폴더 이름은 변경 가능)
 ├build  
 ├devel/setup.bash  
 └src  
-&nasp;└scout_mini_ros  
-&nasp;&nasp;└scout_bringup  
-&nasp;&nasp;&nasp;├core  
+　└scout_mini_ros  
+　　└scout_bringup  
+　　　├core  
 &nasp;&nasp;&nasp;├data/yolov4.weights(or yolov4-tiny.weights)  
 &nasp;&nasp;&nasp;├deep_sort  
 &nasp;&nasp;&nasp;├launch  
