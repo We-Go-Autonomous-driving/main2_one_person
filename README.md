@@ -45,7 +45,7 @@
 
 ## 2. scout-mini, yolov4-deepsort 설치  
 1) 위 내용과 이어짐. scout-mini github code를 clone해야 한다. ROS workspace init한 상태에서 바로 진행한다.  
-`$ git clone https://github.com/We-Go-Autonomous-driving/main1_sub_object.git`  
+`$ git clone https://github.com/We-Go-Autonomous-driving/main2_one_person.git`  
 2) 새로운 패키지(폴더)를 설치하면 catkin_make를 해줘야 한다.(상위 폴더에서 해야함)  
 `$ cd .. && catkin_make`  
 
